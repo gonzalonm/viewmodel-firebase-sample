@@ -4,8 +4,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.gonzalonm.viewmodelfirebase.R;
 import com.gonzalonm.viewmodelfirebase.domain.Article;
 
@@ -37,15 +39,21 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
 
     public static class ArticleViewHolder extends RecyclerView.ViewHolder {
 
+        ImageView image;
         TextView name;
+        TextView price;
 
         public ArticleViewHolder(View itemView) {
             super(itemView);
+            image = itemView.findViewById(R.id.image);
             name = itemView.findViewById(R.id.name);
+            price = itemView.findViewById(R.id.price);
         }
 
         public void bind(Article article) {
+            Glide.with(itemView.getContext()).load(article.getImageUrl()).into(image);
             name.setText(article.getName());
+            price.setText("$" + article.getPrice());
         }
     }
 }
