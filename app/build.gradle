@@ -24,7 +24,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:26.1.0'
     compile 'com.android.support:recyclerview-v7:26.1.0'
 
-    compile "android.arch.lifecycle:runtime:$arch_version"
     compile "android.arch.lifecycle:extensions:$arch_version"
     annotationProcessor "android.arch.lifecycle:compiler:$arch_version"
 
