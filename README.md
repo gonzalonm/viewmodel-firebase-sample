@@ -1,6 +1,6 @@
 # viewmodel-firebase-sample
 
-Simple sample project to show [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel.html) and [Firebase Database](https://firebase.google.com/docs/database/android/start/) working together.
+Simple sample project to show [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel.html) and [Firebase Database](https://firebase.google.com/docs/database/android/start/) working together. Based on this article: https://medium.com/globallogic-latinoamerica-mobile/viewmodel-firebase-database-3cc708044b5d
 
 <img src="home.png" height="800">
 
